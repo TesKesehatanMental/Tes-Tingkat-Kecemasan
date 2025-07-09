@@ -137,32 +137,33 @@
       let kategori = "";
       let tips = "";
 
-      if (skor <= 4) {
+            if (skor <= 4) {
+        kategori = "Tidak Ada";
+        tips = `<ul>
+          <li>Terus pertahankan gaya hidup sehat Anda</li>
+          <li>Lanjutkan aktivitas positif yang menyenangkan</li>
+          <li><b>Medis:</b> Tidak memerlukan intervensi khusus</li>
+        </ul>`;
+      } else if (skor <= 9) {
         kategori = "Ringan";
         tips = `<ul>
-          <li>Lakukan teknik pernapasan dalam setiap pagi</li>
-          <li>Sediakan waktu untuk aktivitas santai</li>
-          <li>Hindari kafein dan alkohol</li>
-          <li><b>Medis:</b> Konsultasi awal dengan psikolog</li>
-          <li><b>Medis:</b> Ikut program relaksasi kelompok</li>
+          <li>Lakukan teknik pernapasan dalam dan meditasi</li>
+          <li>Luangkan waktu untuk relaksasi harian</li>
+          <li><b>Medis:</b> Konsultasi awal dengan psikolog bila diperlukan</li>
         </ul>`;
       } else if (skor <= 14) {
         kategori = "Sedang";
         tips = `<ul>
-          <li>Latih mindfulness selama 10 menit per hari</li>
-          <li>Catat kekhawatiran dan analisis realistisnya</li>
-          <li>Batasi waktu media sosial</li>
+          <li>Latih mindfulness 10 menit/hari</li>
+          <li>Kurangi pemicu stres, seperti media sosial</li>
           <li><b>Medis:</b> Pertimbangkan terapi perilaku kognitif</li>
-          <li><b>Medis:</b> Kunjungi psikolog atau konselor</li>
         </ul>`;
       } else {
         kategori = "Berat";
         tips = `<ul>
-          <li>Jangan menghadapi ketakutan sendirian</li>
-          <li>Hubungi orang yang dipercaya atau keluarga</li>
-          <li>Terapkan rutinitas tidur yang konsisten</li>
-          <li><b>Medis:</b> Konsultasi dengan psikiater</li>
-          <li><b>Medis:</b> Evaluasi kebutuhan obat penenang</li>
+          <li>Segera hubungi dukungan sosial atau keluarga</li>
+          <li>Bangun rutinitas tidur dan makan yang sehat</li>
+          <li><b>Medis:</b> Segera konsultasi dengan psikolog atau psikiater</li>
         </ul>`;
       }
 
